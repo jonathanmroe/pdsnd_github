@@ -1,15 +1,20 @@
 ### Date created
-Include the date you created this project and README file.
+Project creation date: Dec. 12, 2019.
+This readme creation date: Dec. 12, 2019
 
 ### Project Title
-Replace the Project Title
+Analysis of bike sharing data from three large municipalities
 
 ### Description
-Describe what your project is about and what it does
+Use this project to analyze various aspect of bike ride sharing data for Chicago, New York City, and Washington, D.C., for the first six months of the year.
 
 ### Files used
-Include the files used
+bike_share.py
+new_york.csv
+washington.csv
+chicago.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Udacity
+Jonathan Roe
 
