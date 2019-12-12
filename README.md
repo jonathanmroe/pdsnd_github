@@ -20,7 +20,8 @@ chicago.csv
 
 ### How to use this project.
 * Navigate to the folder where this project is located.
-* 
+* In a command prompt type python bike_share.py
+* Follow the instructions that appear on your screen.
 
 ### Credits
 * **Udacity** -- **provided data and template**
