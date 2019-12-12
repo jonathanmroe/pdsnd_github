@@ -22,14 +22,14 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
-        answer = input('What city are you wanting to see the schedule for? ')
+        answer = input('What city are you wanting to see the schedule for: Chicago, New York City, or Washington? ')
         if answer.lower() in CITY_DATA:
             city = CITY_DATA.get(answer.lower())
             print("OK. You're wanting the schedule for " + answer.title() +'.')
             break
         else:
             print("Sorry, didn't recognize your answer, try again")
-    # get user input for month (all, january, .. june)
+    # get user input for month (all, january, february, march, april, may, june)
     months = ['all','january','february','march','april','may','june']
     while True:
         month = input('For what month? ')
@@ -82,13 +82,13 @@ def load_data(city, month, day):
     # filter by day of week if applicable
     if day != 'all':
         df = df[df['day_of_week'] == day.title()]
-    LIMIT = 5
+    LIMIT = 10
     START = 0
-    END = 5
-    print('Here are the first 5 records for the city, month, and day you selected:') 
+    END = 10
+    print('Here are the first 10 records for the city, month, and day you selected:') 
     print(df[START:END])
     while True:
-        someMore = input('Do you want the next five records? yes or no: ')
+        someMore = input('Do you want the next 10 records? yes or no: ')
         print(someMore)
         if someMore == 'yes':
             START = START + LIMIT
